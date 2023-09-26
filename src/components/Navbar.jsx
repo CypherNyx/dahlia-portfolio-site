@@ -56,7 +56,7 @@ const Navbar = () => {
           </Link>
 
           <Link to="contact" className="link" smooth>
-            Contact Me
+            Contact
           </Link>
 
           <Link to="resume" className="link" smooth>
