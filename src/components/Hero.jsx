@@ -56,7 +56,9 @@ const CustomTitle = styled(Typography)(({ theme }) => ({
       Full Stack MERN Developer
     </Typography>
     <CustomTitle variant="h1">
-    Fusing creativity and <span style={{ color: "#9400FF"}}>programming</span> to build <span style={{ color: "#9400FF"}}>functional</span> web solutions
+
+    I enjoy <span style={{ color: "#9400FF"}}>building</span> and <span style={{ color: "#9400FF"}}>designing</span> for the web.
+    
 
       
     </CustomTitle>
