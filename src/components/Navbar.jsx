@@ -38,7 +38,7 @@ const Navbar = () => {
           <Box component="img" sx={{maxHeight: "45px", maxWidth: "45px", objectFit: "cover"}} src={navIcon}
           />
           <Typography variant="h6" component="div" sx={{ flexGrow: 1}}>
-            Software Developer
+            Dahlia Guido
           </Typography>          
         </Box>
         
