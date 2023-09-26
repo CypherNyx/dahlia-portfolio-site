@@ -1,34 +1,35 @@
-import ecommerceImg from "../media/ecommerce.png";
-import linkedincloneImg from "../media/linkedinclone.png";
-import restcountriesImg from "../media/restcountries.png";
+import theVillageImg from "../media/theVillage.png";
+import pawfectImg from "../media/pawfect_match.png";
+import restcountriesImg from "../media/BookHub.png";
+
 
 export const projects = [
   {
-    title: "LinkedIn Clone",
+    title: "The Village",
     description:
-      "This web application recreates the design of the social media platform Linkedin.",
-    image: linkedincloneImg,
-    tags: ["Firebase", "JavaScript", "React", "Redux"],
-    source: "",
-    liveVersion: "",
+      "Mobile-first application that allows users to share childcare-related resources. Users can set up their own village or join an existing village and submit childcare-related requests and trade 'crayons' (points) with other villagers.",
+    image: theVillageImg,
+    tags: [ "React", "JavaScript", "MongoDB", "MUI"],
+    source: "https://github.com/Annie-McElroy/the-village",
+    liveVersion: "https://the-village-pr3-499485f65b78.herokuapp.com/",
     id: 0,
   },
   {
-    title: "E-Commerce Website",
+    title: "PawfectMatch",
     description:
-      "A fully responsive e-commerce website, built with React, Redux Toolkit & React Router.",
-    image: ecommerceImg,
-    tags: ["React", "JavaScript", "Redux Toolkit", "CSS"],
-    source: "",
-    liveVersion: "",
+      "Pawfect Match is a web application powered by Node.js, Express, MySQL, and Sequelize for seamless functionality. Handlebars and Tailwind CSS ensure a stylish and user-friendly interface, features Firebase realtime chat, ",
+    image: pawfectImg,
+    tags: ["Firebase", "JavaScript", "Node.js", "MySQL"],
+    source: "https://github.com/CypherNyx/PawfectMatch",
+    liveVersion: "https://desolate-journey-58009-31421c44a662.herokuapp.com/",
     id: 1,
   },
   {
-    title: "REST Countries API Project",
+    title: "BookHub",
     description:
-      "A fun challenge from Frontend Mentor using the REST Countries API.",
+      "This application allows users to take a quiz and get book recommendations based on their favorite shows. Then, the user will be presented with a curated list of books to read that are relevant to genres, topics and style of their favorite shows. ",
     image: restcountriesImg,
-    tags: ["React", "JavaScript", "CSS"],
+    tags: ["JavaScript", "HTML5", "CSS", "API-Client"],
     source: "",
     liveVersion: "",
     id: 2,

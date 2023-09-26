@@ -47,7 +47,7 @@ const Navbar = () => {
             Home
           </Link>
 
-          <Link to="projects" className="link" smooth>
+          <Link to="my-projects" className="link" smooth>
             Projects
           </Link>
 
