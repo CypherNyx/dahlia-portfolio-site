@@ -12,7 +12,7 @@ const Footer = () => {
     <Box
       sx={{
         maxWidth: "1100px",
-        borderTop: "1px solid #9400FF", 
+        borderTop: "1px solid #97FFF4", 
         mx: "auto",
         padding: 3,
         display: "flex",
@@ -22,7 +22,7 @@ const Footer = () => {
       <Box sx={{ display: "flex", flexDirection: "column"}}>
         <Typography 
           variant="body" 
-          sx={{ color: "#9400FF", fontWeight: "bold", mb:2 }}
+          sx={{ color: "#260d54", fontWeight: "bold", mb:2 }}
         >
           PAGES
         </Typography>
@@ -63,7 +63,7 @@ const Footer = () => {
       <Box sx={{ display: "flex", flexDirection: "column"}}>
       <Typography 
           variant="body" 
-          sx={{ color: "#9400FF", fontWeight: "bold", mb:2 }}
+          sx={{ color: "#260d54", fontWeight: "bold", mb:2 }}
         >
           SOCIAL
         </Typography>

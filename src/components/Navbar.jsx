@@ -55,7 +55,7 @@ const Navbar = () => {
             About
           </Link>
 
-          <Link to="contact" className="link" smooth>
+          <Link to="contact" className="link" smooth >
             Contact
           </Link>
 

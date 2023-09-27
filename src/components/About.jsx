@@ -185,6 +185,7 @@ const About = () => {
       <Typography
         variant="h4"
         sx={{ color: "white", mt: 12, textAlign: "center" }}
+        id= "contact"
       >
         Interested in Working Together?
       </Typography>

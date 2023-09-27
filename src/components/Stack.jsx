@@ -33,12 +33,12 @@ const Stack = () => {
       <Box sx={{flex: 1}}>
         <Typography 
           variant="h4" 
-          sx={{ color: "white", textAlign: "center", mb: 3 }}
+          sx={{ color: "#260d54", textAlign: "center", mb: 3 }}
         >
           Versatility is key.
         </Typography>
 
-        <Typography variant="h4" sx={{ color: "white", textAlign: "center"}}>
+        <Typography variant="h4" sx={{ color: "#260d54", textAlign: "center"}}>
             Here's what I can help you with
         </Typography>
       </Box>
