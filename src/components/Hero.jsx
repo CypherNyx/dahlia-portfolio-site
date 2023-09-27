@@ -52,7 +52,7 @@ const CustomTitle = styled(Typography)(({ theme }) => ({
     id="home"
   >
     <Typography 
-      sx = {{ color: "white", textAlign: "center", mb:2}} 
+      sx = {{ color: "#260d54", textAlign: "center", mb:2}} 
       variant="h6"
     >
       Full Stack MERN Developer
