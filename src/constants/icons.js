@@ -16,8 +16,8 @@ export const icons = [
   },
   {
     id: 3,
-    name: "SASS",
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+    name: "MongoDB",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
   },
   {
     id: 4,
@@ -26,8 +26,8 @@ export const icons = [
   },
   {
     id: 5,
-    name: "TypeScript",
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    name: "Material UI",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
   },
   {
     id: 6,

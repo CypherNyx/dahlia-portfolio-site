@@ -40,14 +40,14 @@ const Project = ({ title, description, tags, img}) => {
             style={{ backgroundColor: "rgba(0,199,255,255)" }}
             variant="contained"
           >
-            Source Code
+            Deployed Site
           </Button>
           <Button
             size="small"
             style={{ backgroundColor: "rgba(0,199,255,255)" }}
             variant="contained"
           >
-            Live Version
+            GitHub Repository
           </Button>
         </Box>
 

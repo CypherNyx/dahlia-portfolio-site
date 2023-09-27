@@ -25,9 +25,10 @@ const Experience = () => {
               tags={project.tags}
               img={project.image}
             />
-          ))
-        }
+          ))}
       </Box>
+
+      <Stack />
     </Box>
   );
 };
