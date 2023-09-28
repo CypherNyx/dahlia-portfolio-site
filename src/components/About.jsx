@@ -29,22 +29,7 @@ const About = () => {
     },
   }));
 
-  const CustomButton = styled(Button)(({ theme }) => ({
-    border: "3px solid white",
-    borderRadius: "25px",
-    color: "white",
-    width: "15%",
-    display: "block",
-    "&:hover": {
-      border: "3px solid #00C7FF",
-    },
-    [theme.breakpoints.down("md")]: {
-      width: "50%",
-    },
-    [theme.breakpoints.down("sm")]: {
-      width: "75%",
-    },
-  }));
+
 
   const AvatarBox = styled(Box)(({ theme }) => ({
     maxWidth: "1300px",
@@ -181,25 +166,7 @@ const About = () => {
       ></div>
  */}
 
-
-      <Typography
-        variant="h4"
-        sx={{ color: "white", mt: 12, textAlign: "center" }}
-        id= "contact"
-      >
-        Interested in Working Together?
-      </Typography>
-      <CustomButton
-        variant="outlined"
-        sx={{
-          mx: "auto",
-          mt: 3,
-          mb: 8,
-        }}
-      >
-        Get in Touch
-      </CustomButton>
-    </Box>
+   </Box>
   );
 };
 

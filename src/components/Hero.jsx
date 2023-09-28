@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Button, styled, Typography } from "@mui/material";
 import { Link } from "react-scroll";
 import reactImg from "../media/react_svg.svg";
-import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
+import CloudDownloadTwoToneIcon from '@mui/icons-material/CloudDownloadTwoTone';
 
 
 
@@ -105,7 +105,7 @@ const CustomTitle = styled(Typography)(({ theme }) => ({
           smooth={true} 
           duration={500}
          >
-          <CustomButton ><span><CloudDownloadIcon style={{ color: '#CCCCCC', }} /> &nbsp; </span> Resume</CustomButton>
+          <CustomButton ><span><CloudDownloadTwoToneIcon style={{ color: '#FFF', }} /> &nbsp; </span> Resume</CustomButton>
         </Link>
         </Box>
         

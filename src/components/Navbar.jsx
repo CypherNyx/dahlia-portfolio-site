@@ -32,10 +32,16 @@ const Navbar = () => {
     },
   }));
   return <Box sx={{flexGrow: 1, px:5, py: 2, maxWidth: "1200px", mx: "auto"}}>
-    <AppBar position = "fixed" style= {{background: "rgba(101, 117, 229, 0.7)", boxShadow: "none"}}>
+    <AppBar 
+      position = "fixed" 
+      style= {{background: "rgba(101, 117, 229, 0.7)", boxShadow: "none", padding: "1rem 2rem"}}>
       <CustomToolbar>
         <Box sx={{display: "flex", justifyContent: "center", alignItems: "center", gap: "1rem"}}>
-        <Link to="home" className="link" smooth offset={-80}>
+        <Link 
+        to="home" 
+        className="link" 
+        smooth 
+        offset={-80}>
           <Typography variant="h2"
           component="div" 
           sx={{ 
