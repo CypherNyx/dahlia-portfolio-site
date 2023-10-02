@@ -32,30 +32,68 @@ const Navbar = () => {
     },
   }));
   return <Box sx={{flexGrow: 1, px:5, py: 2, maxWidth: "1200px", mx: "auto"}}>
-    <AppBar position = "static" style= {{background: "transparent", boxShadow: "none"}}>
+    <AppBar 
+      position = "fixed" 
+      style= {{background: "rgba(147, 101, 229, 0.7)", boxShadow: "none", padding: "1rem 2rem"}}>
       <CustomToolbar>
         <Box sx={{display: "flex", justifyContent: "center", alignItems: "center", gap: "1rem"}}>
-          <Box component="img" sx={{maxHeight: "45px", maxWidth: "45px", objectFit: "cover"}} src={navIcon}
-          />
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1}}>
+        <Link 
+        to="home" 
+        className="link" 
+        smooth 
+        offset={-80}>
+          <Typography variant="h2"
+          component="div" 
+          sx={{ 
+            flexGrow: 1, 
+            fontSize: "1.2rem",
+            fontWeight: "bold",
+            textTransform: "uppercase", 
+            letterSpacing: "5px", 
+            textShadow: "0 0 10px rgba(0,0,0,.5)",
+            fontFamily: "Monaco, sans-serif"
+            }}>
             Dahlia Guido
-          </Typography>          
+          </Typography> 
+          <Typography
+            component="div" 
+            sx={{ 
+              flexGrow: 1, 
+              fontSize: "10px",
+              fontWeight: "bold",
+              textTransform: "uppercase", 
+              letterSpacing: "4px", 
+              textShadow: "0 0 10px rgba(0,0,0,.5)",
+              marginLeft: "12%",
+              fontFamily: "Monaco, sans-serif"
+            }}>
+              Web Developer</Typography> 
+          </Link>        
         </Box>
         
         <CustomBox>
-          <Link to="home" className="link" smooth>
-            Home
-          </Link>
-
-          <Link to="my-projects" className="link" smooth>
+          <Link 
+             to="my-projects" 
+             className="link" 
+             smooth
+             offset={-80}
+          >
             Projects
           </Link>
 
-          <Link to="about" className="link" smooth>
+          <Link 
+            to="about" 
+            className="link" 
+            smooth
+            offset={-80}>
             About
           </Link>
 
-          <Link to="contact" className="link" smooth>
+          <Link 
+          to="contact" 
+          className="link" 
+          smooth 
+          offset={-80}>
             Contact
           </Link>
 
@@ -65,7 +103,7 @@ const Navbar = () => {
         </CustomBox>
       </CustomToolbar>
     </AppBar>
-
+    <Toolbar />
   </Box>;
 };
 

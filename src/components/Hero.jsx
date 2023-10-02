@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Button, styled, Typography } from "@mui/material";
 import { Link } from "react-scroll";
 import reactImg from "../media/react_svg.svg";
+import CloudDownloadTwoToneIcon from '@mui/icons-material/CloudDownloadTwoTone';
 
 
 
@@ -11,7 +12,8 @@ const CustomButton = styled(Button)(({ theme }) => ({
   border: "3px solid transparent",
   backgroundColor: "#260d54",
   color: "white",
-  width: "20%",
+  width: "200px",
+  height: "50px",
   borderRadius: "25px",
   "&:hover": {
     border: "3px solid white",
@@ -22,7 +24,7 @@ const CustomButton = styled(Button)(({ theme }) => ({
   },
   [theme.breakpoints.down("sm")]: {
     width: "50%",
-  }
+  }, 
 }));
 
 const CustomTitle = styled(Typography)(({ theme }) => ({
@@ -50,17 +52,14 @@ const CustomTitle = styled(Typography)(({ theme }) => ({
     id="home"
   >
     <Typography 
-      sx = {{ color: "white", textAlign: "center", mb:2}} 
+      sx = {{ color: "#260d54", textAlign: "center", mb:2}} 
       variant="h6"
     >
       Full Stack MERN Developer
     </Typography>
     <CustomTitle variant="h1">
-
-    I enjoy <span style={{ color: "#9400FF"}}>building</span> and <span style={{ color: "#9400FF"}}>designing</span> for the web.
-    
-
-      
+    I enjoy <span style={{ color: "#97FFF4"}}>building</span> and <span style={{ color: "#97FFF4"}}>designing</span> for the web.
+  
     </CustomTitle>
     <Box
         sx={{
@@ -81,8 +80,35 @@ const CustomTitle = styled(Typography)(({ theme }) => ({
           }}
           src={reactImg}
         />
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            flexWrap: "wrap",
+            width: "100%",
+            height: "100%",
+            gap: "1rem",
+          }}
+        >
 
-        <CustomButton>Contact Me</CustomButton>
+        <Link 
+          to="contact" 
+          smooth={true} 
+          duration={500}
+          >
+          <CustomButton>Contact Me</CustomButton>
+        </Link>
+          
+        <Link 
+          to="about" 
+          smooth={true} 
+          duration={500}
+         >
+          <CustomButton ><span><CloudDownloadTwoToneIcon style={{ color: '#FFF', }} /> &nbsp; </span> Resume</CustomButton>
+        </Link>
+        </Box>
+        
       </Box>
     </Box>
 
