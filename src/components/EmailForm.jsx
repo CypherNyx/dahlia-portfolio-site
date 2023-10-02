@@ -1,41 +1,75 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { Box, Button, styled, Typography } from "@mui/material";
-// import dotenv from 'dotenv';
+import { Box, Button, styled, Typography, FormControl, OutlinedInput , InputLabel   } from "@mui/material";
 
-
-// dotenv.config();
 
 
 const EmailForm = () => {
+  
   const form = useRef();
+  console.log(process.env.REACT_APP_PUBLIC_KEY);
+  emailjs.init(process.env.REACT_APP_PUBLIC_KEY);
 
-  // const serviceEJS = process.env.SERVICE_ID;
-  // const templateEJS = process.env.TEMPLATE_ID;
-  // const keyEJS = process.env.API_KEY;
+  const serviceEJS = process.env.REACT_APP_SERVICE_ID;
+  const templateEJS = process.env.REACT_APP_TEMPLATE_ID;
+    
+  const [sent, setSent] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('serviceEJS, templateEJS, form.current, keyEJS')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+
+    
+    emailjs.sendForm(serviceEJS, templateEJS, form.current, process.env.REACT_APP_PUBLIC_KEY)
+    .then((result) => {
+      console.log(result.text);
+      setSent(true);
+      form.current.reset();
+    }, (error) => {
+      console.log(error.text);
+    });
+    
   };
 
   return (
-    <Box >
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form>
+    <Box
+    component="form"
+    ref={form}
+    onSubmit={sendEmail}
+      sx={{
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+        '& > :not(style)': { m: 1 },
+      }}
+      noValidate
+      autoComplete="off" >
+    <FormControl>
+    <InputLabel htmlFor="component-outlined">Name</InputLabel>
+        <OutlinedInput id="component-outlined" label="Name" name="user_name" 
+        sx={{
+          width: '100%',
+          maxWidth: '400px',
+          fontSize: '16px',
+          }} />
+        </FormControl>
+        <FormControl>
+      <InputLabel htmlFor="email" >Email</InputLabel>
+    <OutlinedInput id="email" type="email" name="user_email" />
+  </FormControl>
+  <FormControl>
+    <InputLabel htmlFor="message">Message</InputLabel>
+    <OutlinedInput id="message" multiline rows={5} name="message" />
+  </FormControl>
+  {sent ? (
+    <Typography variant="body1">Email sent successfully!</Typography> 
+  ) : (
+    <Button type="submit" variant="contained">
+    Send
+  </Button>
+  )}
+
+  
     </Box>
   );
 };
