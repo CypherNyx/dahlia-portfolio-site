@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dahlia-portfolio-site/static/css/main.32980c11.css",
-    "main.js": "/dahlia-portfolio-site/static/js/main.231c04cf.js",
+    "main.js": "/dahlia-portfolio-site/static/js/main.d753b502.js",
     "static/media/BookHub.png": "/dahlia-portfolio-site/static/media/BookHub.c436140e67cabc8e2095.png",
     "static/media/theVillage.png": "/dahlia-portfolio-site/static/media/theVillage.f38f02ae3a1f6594c211.png",
     "static/media/pawfect_match.png": "/dahlia-portfolio-site/static/media/pawfect_match.a3f61a4facec205a3794.png",
@@ -10,10 +10,10 @@
     "static/media/react_svg.svg": "/dahlia-portfolio-site/static/media/react_svg.282704d42209313dedab1847baf13cf8.svg",
     "index.html": "/dahlia-portfolio-site/index.html",
     "main.32980c11.css.map": "/dahlia-portfolio-site/static/css/main.32980c11.css.map",
-    "main.231c04cf.js.map": "/dahlia-portfolio-site/static/js/main.231c04cf.js.map"
+    "main.d753b502.js.map": "/dahlia-portfolio-site/static/js/main.d753b502.js.map"
   },
   "entrypoints": [
     "static/css/main.32980c11.css",
-    "static/js/main.231c04cf.js"
+    "static/js/main.d753b502.js"
   ]
 }
