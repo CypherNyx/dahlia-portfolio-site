@@ -24,6 +24,8 @@ const Experience = () => {
               description={project.description} 
               tags={project.tags}
               img={project.image}
+              source={project.source}
+              liveVersion={project.liveVersion}
             />
           ))}
       </Box>

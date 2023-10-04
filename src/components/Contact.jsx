@@ -39,7 +39,7 @@ import EmailForm from './EmailForm';
       <Box sx={{ maxWidth: "1300px", my: 3, padding: 3, mx: "auto"}} id="about" >
          <Typography
         variant="h4"
-        sx={{ color: "white", mt: 12, textAlign: "center" }}
+        sx={{ color: "#260d54", mt: 12, textAlign: "center" }}
         id= "contact"
       >
         Interested in Working Together?
