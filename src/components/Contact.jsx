@@ -54,28 +54,26 @@ import EmailForm from './EmailForm';
           border: "3px solid white",
           mx: "auto",
           mt: 4,
-          mb: 2,
+          mb: 3,
         }}
       >
         <a href="https://www.linkedin.com/in/dahlia-guido/" target="_blank" style={{ textDecoration: "none", color: "white" }}rel="noopener noreferrer">
-        <span style={{ display: "flex", alignItems: "center" }}>
-        <LinkedInIcon style={{ color: '#FFF', height: "28", width: "28"}} />&nbsp; Let's connect</span> 
+        <span style={{ display: "flex", alignItems: "center", justifyContent: "center", }}>
+        <LinkedInIcon style={{ color: '#FFF', height: "28", width: "28"}} />&nbsp; Let's connect on LinkedIn</span> 
         </a>
       </CustomButton>
       
-      <CustomButton
-        variant="text"
-        sx={{
-          mx: "auto",
-          mt: 1,
-          mb: 5,
-        }}
-      >
-        <a href="https://www.linkedin.com/in/dahlia-guido/" target="_blank" style={{ textDecoration: "none", color: "white" }}rel="noopener noreferrer">
-        <span style={{ display: "flex", alignItems: "center" }}>
-        <EmailIcon style={{ color: '#FFF', height: "28", width: "28"}} />&nbsp; copy my email address</span> 
-        </a>
-      </CustomButton>
+      
+      <ClickAwayListener onClickAway={handleClickAway}>
+        <Tooltip open={open} title="Email copied!" placement="top">
+        <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", mb: 2, cursor: "pointer" }}>
+          <EmailIcon sx={{ mr: 2, color: "white" }} />
+          <Typography variant="body2" sx={{ color: "white", my: 1 }} onClick={handleClick}>
+            dguido.dev@gmail.com
+          </Typography>
+        </Box>
+        </Tooltip>
+        </ClickAwayListener>
       </Box>
       <EmailForm />
       </Box>
