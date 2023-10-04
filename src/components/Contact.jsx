@@ -1,6 +1,7 @@
-import React from "react";
-import { Box, Button, Typography, styled } from "@mui/material";
+import React, { useState } from "react";
+import { Box, Button, Typography, styled, Tooltip, ClickAwayListener } from "@mui/material";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import EmailIcon from "@mui/icons-material/Email";
 import ResumePDF from "../constants/resume";
 import { PDFDownloadLink } from "@react-pdf/renderer";
 import EmailForm from './EmailForm';
@@ -8,7 +9,6 @@ import EmailForm from './EmailForm';
   const Contact = () => {
 
     const CustomButton = styled(Button)(({ theme }) => ({
-      border: "3px solid white",
       borderRadius: "25px",
       color: "white",
       width: "15%",
@@ -24,6 +24,17 @@ import EmailForm from './EmailForm';
       },
     }));
 
+    const [open, setOpen] = useState(false);
+
+  const handleClick = () => {
+    setOpen(true);
+    navigator.clipboard.writeText("dguido.dev@gmail.com");
+  };
+
+  const handleClickAway = () => {
+    setOpen(false);
+  };
+
     return (
       <Box sx={{ maxWidth: "1300px", my: 3, padding: 3, mx: "auto"}} id="about" >
          <Typography
@@ -33,12 +44,17 @@ import EmailForm from './EmailForm';
       >
         Interested in Working Together?
       </Typography>
+
+      <Box
+          
+        >
       <CustomButton
         variant="outlined"
         sx={{
+          border: "3px solid white",
           mx: "auto",
-          mt: 3,
-          mb: 8,
+          mt: 4,
+          mb: 2,
         }}
       >
         <a href="https://www.linkedin.com/in/dahlia-guido/" target="_blank" style={{ textDecoration: "none", color: "white" }}rel="noopener noreferrer">
@@ -46,6 +62,21 @@ import EmailForm from './EmailForm';
         <LinkedInIcon style={{ color: '#FFF', height: "28", width: "28"}} />&nbsp; Let's connect</span> 
         </a>
       </CustomButton>
+      
+      <CustomButton
+        variant="text"
+        sx={{
+          mx: "auto",
+          mt: 1,
+          mb: 5,
+        }}
+      >
+        <a href="https://www.linkedin.com/in/dahlia-guido/" target="_blank" style={{ textDecoration: "none", color: "white" }}rel="noopener noreferrer">
+        <span style={{ display: "flex", alignItems: "center" }}>
+        <EmailIcon style={{ color: '#FFF', height: "28", width: "28"}} />&nbsp; copy my email address</span> 
+        </a>
+      </CustomButton>
+      </Box>
       <EmailForm />
       </Box>
     );
