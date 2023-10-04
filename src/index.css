@@ -5,16 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: rgba(0, 10, 31, 255); 
-  background: hsla(232, 73%, 65%, 1);
-
-background: linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(279, 33%, 48%, 1) 100%);
-
-background: -moz-linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(279, 33%, 48%, 1) 100%);
-
-background: -webkit-linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(279, 33%, 48%, 1) 100%);
-
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6274E7", endColorstr="#8752A3", GradientType=1 ); */
+  /* background-color: rgba(0, 10, 31, 255);*/
 
   background: hsla(232, 73%, 65%, 1);
 
@@ -36,4 +27,3 @@ code {
 .link {
   cursor: pointer;
 }
-

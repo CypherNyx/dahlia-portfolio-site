@@ -68,12 +68,14 @@ const Footer = () => {
           SOCIAL
         </Typography>
 
-        <Box sx={{ display: "flex", alignItems: "center", cursor: "pointer" }}>
+        <a href="https://github.com/CypherNyx" target="_blank" style={{ textDecoration: "none", color: "white", width: "100%" }}rel="noopener noreferrer">        <Box sx={{ display: "flex", alignItems: "center", cursor: "pointer" }}>
           <GitHubIcon sx={{ mr: 2, color: "white" }} />
           <Typography variant="body2" sx={{ color: "white", my: 1 }}>
             GitHub
           </Typography>
         </Box>
+        </a>
+
 
         <Box sx={{ display: "flex", alignItems: "center", cursor: "pointer" }}>
           <EmailIcon sx={{ mr: 2, color: "white" }} />
@@ -82,12 +84,14 @@ const Footer = () => {
           </Typography>
         </Box>
 
+        <a href="https://www.linkedin.com/in/dahlia-guido/" target="_blank" style={{ textDecoration: "none", color: "white", width: "100%" }}rel="noopener noreferrer">
         <Box sx={{ display: "flex", alignItems: "center", cursor: "pointer" }}>
           <LinkedInIcon sx={{ mr: 2, color: "white" }} />
           <Typography variant="body2" sx={{ color: "white", my: 1 }}>
             LinkedIn
           </Typography>
-        </Box>
+          </Box>
+        </a>
 
 
       </Box>

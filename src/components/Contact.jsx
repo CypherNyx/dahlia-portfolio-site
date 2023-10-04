@@ -1,6 +1,8 @@
 import React from "react";
 import { Box, Button, Typography, styled } from "@mui/material";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import ResumePDF from "../constants/resume";
+import { PDFDownloadLink } from "@react-pdf/renderer";
 import EmailForm from './EmailForm';
 
   const Contact = () => {
@@ -39,8 +41,10 @@ import EmailForm from './EmailForm';
           mb: 8,
         }}
       >
+        <a href="https://www.linkedin.com/in/dahlia-guido/" target="_blank" style={{ textDecoration: "none", color: "white" }}rel="noopener noreferrer">
         <span style={{ display: "flex", alignItems: "center" }}>
-        <LinkedInIcon style={{ color: '#FFF', height: "28", width: "28"}} />&nbsp; Let's connect!</span> 
+        <LinkedInIcon style={{ color: '#FFF', height: "28", width: "28"}} />&nbsp; Let's connect</span> 
+        </a>
       </CustomButton>
       <EmailForm />
       </Box>

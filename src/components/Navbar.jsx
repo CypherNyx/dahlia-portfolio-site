@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import ButtonGroup from '@mui/material/ButtonGroup';
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import navIcon from "../media/react_logo.png";
@@ -19,7 +20,17 @@ const Navbar = () => {
     justifyContent: "center",
     gap: "1rem",
     [theme.breakpoints.down("sm")]: {
-      marginTop: "2rem",
+      marginTop: "1rem",
+    },
+    "& a": {
+      padding: "1rem",
+      color: "#FFF",
+      textDecoration: "none",
+      transition: "all 0.3s ease-in-out",
+      "&:hover": {
+        backgroundColor: "#97fff4",
+        color: "#000",
+      },
     },
   }));
 
@@ -70,8 +81,9 @@ const Navbar = () => {
               Web Developer</Typography> 
           </Link>        
         </Box>
-        
-        <CustomBox>
+
+       
+         <CustomBox> 
           <Link 
              to="my-projects" 
              className="link" 
