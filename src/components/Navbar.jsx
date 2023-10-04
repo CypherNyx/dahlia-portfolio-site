@@ -105,13 +105,13 @@ const Navbar = () => {
           to="contact" 
           className="link" 
           smooth 
-          offset={-80}>
+          offset={-90}>
             Contact
           </Link>
 
-          <Link to="resume" className="link" smooth>
+          {/* <Link to="resume" className="link" smooth>
             Resume
-          </Link>
+          </Link> */}
         </CustomBox>
       </CustomToolbar>
     </AppBar>

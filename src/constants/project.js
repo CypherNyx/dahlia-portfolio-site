@@ -30,8 +30,8 @@ export const projects = [
       "This application allows users to take a quiz and get book recommendations based on their favorite shows. Then, the user will be presented with a curated list of books to read that are relevant to genres, topics and style of their favorite shows. ",
     image: restcountriesImg,
     tags: ["JavaScript", "HTML5", "CSS", "API-Client"],
-    source: "",
-    liveVersion: "",
+    source: "https://github.com/CypherNyx/BookHub",
+    liveVersion: "https://cyphernyx.github.io/BookHub/",
     id: 2,
   },
 ];
