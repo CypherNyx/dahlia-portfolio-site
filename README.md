@@ -1,5 +1,5 @@
 # Dahlia Guido - React Portfolio
-> Deployed with GitHub Pages.
+> Deployed with GitHub Pages 🔗 https://cyphernyx.github.io/dahlia-portfolio-site/
 
 ### Description 📖
 
