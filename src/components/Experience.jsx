@@ -12,7 +12,7 @@ const Experience = () => {
         sx={{color: "white", textAlign: "center", mb: 2}}
       >
         Recent {" "}
-        <span style={{ color: "rgba(0,199,255,255"}}>web applications</span> I've developed.
+        <span style={{ color: "#FFFD8C"}}>web applications</span> I've developed.
       </Typography>
 
       <Box sx={{display: "flex", justifyContent: "center", flexWrap: "wrap" }}>

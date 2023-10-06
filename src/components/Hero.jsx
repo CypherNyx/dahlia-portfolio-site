@@ -97,16 +97,16 @@ const CustomTitle = styled(Typography)(({ theme }) => ({
           smooth={true} 
           duration={500}
           >
-          <CustomButton>Contact Me</CustomButton>
+          <CustomButton style={{ minWidth: "120px" }}><span>Contact Me</span></CustomButton>
         </Link>
           
-        <Link 
-          to="about" 
-          smooth={true} 
-          duration={500}
-         >
-          <CustomButton ><span><CloudDownloadTwoToneIcon style={{ color: '#FFF', }} /> &nbsp; </span> Resume</CustomButton>
-        </Link>
+       
+          <CustomButton style={{ minWidth: "120px" }} >
+          <a href="/path/to/resume.pdf" download style={{ textDecoration: "none", color: "white", display: "flex", alignItems: "center" }}>
+          <CloudDownloadTwoToneIcon style={{ color: '#FFF', }} /> <span  style={{ marginLeft: "0.5rem" }}> Resume</span> 
+          </a>
+          </CustomButton>
+        
         </Box>
         
       </Box>
