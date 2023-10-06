@@ -11,8 +11,8 @@ const Experience = () => {
         variant="h4" 
         sx={{color: "white", textAlign: "center", mb: 2}}
       >
-        Let's take a look at what I've {" "}
-        <span style={{ color: "rgba(0,199,255,255"}}>built</span> so far
+        Recent {" "}
+        <span style={{ color: "#FFFD8C"}}>web applications</span> I've developed.
       </Typography>
 
       <Box sx={{display: "flex", justifyContent: "center", flexWrap: "wrap" }}>
