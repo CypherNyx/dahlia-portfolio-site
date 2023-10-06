@@ -32,14 +32,14 @@ const Stack = () => {
     <CustomBox sx={{my:5, padding: 2}}>
       <Box sx={{flex: 1}}>
         <Typography 
-          variant="h4" 
-          sx={{ color: "#260d54", textAlign: "center", mb: 3 }}
+          variant="h5" 
+          sx={{ color: "#260d54", textAlign: "center", mb: 1 }}
         >
-          Versatility is key.
+           These are some key technologies I can contribute to
         </Typography>
 
         <Typography variant="h4" sx={{ color: "#260d54", textAlign: "center"}}>
-            Here's what I can help you with
+        as a full-stack developer:
         </Typography>
       </Box>
 
