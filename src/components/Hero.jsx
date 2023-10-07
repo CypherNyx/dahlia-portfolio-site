@@ -102,12 +102,13 @@ const CustomTitle = styled(Typography)(({ theme }) => ({
           
        
           <CustomButton style={{ minWidth: "120px" }} >
-          <a href="/path/to/resume.pdf" download style={{ textDecoration: "none", color: "white", display: "flex", alignItems: "center" }}>
+          <a href="../media/Dahlia_Guido_Resume_download.pdf" download style={{ textDecoration: "none", color: "white", display: "flex", alignItems: "center" }}>
           <CloudDownloadTwoToneIcon style={{ color: '#FFF', }} /> <span  style={{ marginLeft: "0.5rem" }}> Resume</span> 
           </a>
           </CustomButton>
         
         </Box>
+        
         
       </Box>
     </Box>
