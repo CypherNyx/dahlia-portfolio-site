@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Button, styled, Typography } from "@mui/material";
 import { Link } from "react-scroll";
 import reactImg from "../media/react_svg.svg";
+import resumeDownload from '../media/dahlia_guido_resume_download.pdf'
 import CloudDownloadTwoToneIcon from '@mui/icons-material/CloudDownloadTwoTone';
 
 
@@ -102,7 +103,7 @@ const CustomTitle = styled(Typography)(({ theme }) => ({
           
        
           <CustomButton style={{ minWidth: "120px" }} >
-          <a href="../../dahlia_guido_resume_download.pdf" download style={{ textDecoration: "none", color: "white", display: "flex", alignItems: "center" }}>
+          <a href={resumeDownload} download style={{ textDecoration: "none", color: "white", display: "flex", alignItems: "center" }}>
           <CloudDownloadTwoToneIcon style={{ color: '#FFF', }} /> <span  style={{ marginLeft: "0.5rem" }}> Resume</span> 
           </a>
           </CustomButton>

@@ -8,6 +8,8 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import navIcon from "../media/react_logo.png";
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import resumeView from '../media/dahlia_guido_resume_view.pdf';
 import { Link } from "react-scroll";
 import { styled } from "@mui/system";
 
@@ -109,9 +111,9 @@ const Navbar = () => {
             Contact
           </Link>
 
-          <Link to="resume" className="link" smooth>
-            Resume
-          </Link> 
+          <a href={resumeView} className="link" target = "_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "white", display: "flex", alignItems: "center" }}>
+          <OpenInNewIcon style={{ color: '#FFF', }} /> <span  style={{ marginLeft: "0.5rem" }}> Resume</span> 
+          </a> 
         </CustomBox>
       </CustomToolbar>
     </AppBar>
