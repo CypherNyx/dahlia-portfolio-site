@@ -109,9 +109,9 @@ const Navbar = () => {
             Contact
           </Link>
 
-          {/* <Link to="resume" className="link" smooth>
+          <Link to="resume" className="link" smooth>
             Resume
-          </Link> */}
+          </Link> 
         </CustomBox>
       </CustomToolbar>
     </AppBar>
