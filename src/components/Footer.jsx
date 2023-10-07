@@ -76,9 +76,9 @@ const Footer = () => {
           Resume
         </Link>   */}
 
-        <Link href={resumeView} className="link" target = "_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "white", margin: "0.5rem 0", display: "flex", alignItems: "center" }}>
+        <a href={resumeView} className="link" target = "_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "white", margin: "0.5rem 0", display: "flex", alignItems: "center" }}>
           <OpenInNewIcon style={{ color: '#FFF', }} /> <span  style={{ marginLeft: "0.5rem" }}> Resume</span> 
-          </Link> 
+          </a> 
 
       </Box>
 
