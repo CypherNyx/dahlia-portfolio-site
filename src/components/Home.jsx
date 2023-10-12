@@ -10,7 +10,7 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
 
 
-const Hero = () => {
+const Home = () => {
 
   const CustomButton = styled(Button)(({ theme }) => ({
     border: "3px solid transparent",
@@ -45,25 +45,8 @@ const Hero = () => {
 
 
   return (
-    <Box id="parallaxBkg" className="hero" >
-      <Parallax pages={2} style={{ top: '0', left: '0' }} className='animation parallax'>
-        <ParallaxLayer offset={0} speed={0.25}>
-          <div className="animation_layer parallax" id="imgBackgroundBase"></div>
-        </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.5}>
-          <div className="animation_layer parallax" id="imgBackgroundGlitter"></div>
-        </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.1}>
-          <div className="animation_layer parallax" id="imgThirdRow"></div>
-        </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={-0.15}>
-          <div className="animation_layer parallax" id="imgSecondRow"></div>
-        </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={-0.25}>
-          <div className="animation_layer parallax" id="imgFirstRow"></div>
-        </ParallaxLayer>
-        {/* <ParallaxLayer offset={0} speed={-0.35}> 
-          <Box id="foreground"
+    <Box id="home" className="hero" >
+                <Box id="foreground"
             sx={{
               mt: 18,
               mb: 8,
@@ -133,16 +116,11 @@ const Hero = () => {
 
 
           </Box>
-        </ParallaxLayer> */}
-
-      </Parallax>
-
-
-
+       
     </Box>
 
 
   );
 };
 
-export default Hero;
+export default Home;

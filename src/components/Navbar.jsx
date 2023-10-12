@@ -54,7 +54,7 @@ const Navbar = () => {
         to="home" 
         className="link" 
         smooth 
-        offset={-80}>
+        offset={-200}>
           <Typography variant="h2"
           component="div" 
           sx={{ 
@@ -90,7 +90,7 @@ const Navbar = () => {
              to="my-projects" 
              className="link" 
              smooth
-             offset={-80}
+             offset={-100}
           >
             Projects
           </Link>
@@ -99,7 +99,7 @@ const Navbar = () => {
             to="about" 
             className="link" 
             smooth
-            offset={-80}>
+            offset={-100}>
             About
           </Link>
 
@@ -107,7 +107,7 @@ const Navbar = () => {
           to="contact" 
           className="link" 
           smooth 
-          offset={-90}>
+          offset={-100}>
             Contact
           </Link>
 

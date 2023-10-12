@@ -6,7 +6,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  scroll-behavior: smooth;
   /* background-color: rgba(0, 10, 31, 255);*/
 /*
   background: hsla(232, 73%, 65%, 1);
@@ -22,13 +21,13 @@ body {
 
 background: hsla(232, 73%, 65%, 1);
 
-background: linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(261, 72%, 65%, 1) 19%, hsla(265, 85%, 34%, 1) 100%);
+background: linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(261, 72%, 65%, 1) 19%, hsla(266, 83%, 23%, 1) 71%, hsla(266, 83%, 23%, 1) 100%);
 
-background: -moz-linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(261, 72%, 65%, 1) 19%, hsla(265, 85%, 34%, 1) 100%);
+background: -moz-linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(261, 72%, 65%, 1) 19%, hsla(266, 83%, 23%, 1) 71%, hsla(266, 83%, 23%, 1) 100%);
 
-background: -webkit-linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(261, 72%, 65%, 1) 19%, hsla(265, 85%, 34%, 1) 100%);
+background: -webkit-linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(261, 72%, 65%, 1) 19%, hsla(266, 83%, 23%, 1) 71%, hsla(266, 83%, 23%, 1) 100%);
 
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6576E7", endColorstr="#9265E6", GradientType=1 );
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6576e7", endColorstr="#9265e6", GradientType=1 );
 
 
 }
@@ -42,11 +41,16 @@ code {
   cursor: pointer;
 }
 
+#home{
+  position: relative;
+  z-index: 10;
+}
+
 
 
 /***** SPRING REACT ANIMATION *****/
 .hero {
-  z-index: -1;
+    z-index: -1;
 }
 .animation, .animation_layer{
   min-height: 100vh;
