@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-  <>
+  <div className="wrapper">
   <Navbar />
   <Hero />
   <Experience />
@@ -16,7 +16,7 @@ function App() {
   <Contact />
   <Footer />
   
-  </>
+  </div>
   );
 }
 
