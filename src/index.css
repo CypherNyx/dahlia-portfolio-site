@@ -41,17 +41,11 @@ code {
   cursor: pointer;
 }
 
-#home{
-  position: relative;
-  z-index: 10;
-}
 
 
 
 /***** SPRING REACT ANIMATION *****/
-.hero {
-    z-index: -1;
-}
+
 .animation, .animation_layer{
   min-height: 100vh;
 }

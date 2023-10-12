@@ -45,7 +45,7 @@ const Home = () => {
 
 
   return (
-    <Box id="home" className="hero" >
+    <Box id="home" className="banner" style={{ position: 'relative', zIndex: 10}} >
                 <Box id="foreground"
             sx={{
               mt: 18,
