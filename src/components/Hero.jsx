@@ -4,11 +4,11 @@ import { Link } from "react-scroll";
 import reactImg from "../media/react_svg.svg";
 import resumeDownload from '../media/dahlia_guido_resume_download.pdf'
 import CloudDownloadTwoToneIcon from '@mui/icons-material/CloudDownloadTwoTone';
-import gradientBKG from '../media/01_parallax_bkg_base.png';
-import Glitter from '../media/Stars1.gif';
-import ThirdRow from '../media/03_parallax_3rd_row.png';
-import SecondRow from '../media/04_parallax_2nd_row.png';
-import FirstRow from '../media/05_parallax_1st_row.png';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import Experience from "./Experience";
+import About from "./About";
+import Contact from "./Contact";
+import Footer from "./Footer";
 
 
 
@@ -49,83 +49,99 @@ const Hero = () => {
 
   return (
     <Box id="home" className="hero" >
+      <Parallax pages={4} style={{ top: '0', left: '0' }} className='animation parallax'>
+        <ParallaxLayer offset={0} speed={0.25}>
+          <div className="animation_layer parallax" id="imgBackgroundBase"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={0.5}>
+          <div className="animation_layer parallax" id="imgBackgroundGlitter"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={0.1}>
+          <div className="animation_layer parallax" id="imgThirdRow"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={-0.15}>
+          <div className="animation_layer parallax" id="imgSecondRow"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={-0.25}>
+          <div className="animation_layer parallax" id="imgFirstRow"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={-0.35}>
+          <Box id="foreground"
+            sx={{
+              mt: 18,
+              mb: 8,
+              p: 2,
+              maxWidth: "1200px",
+              mx: "auto"
+            }} >
+            <Typography
+              sx={{ color: "#FFEB3B", textAlign: "center", mb: 2, textShadow: "5px 1px 6px rgba(75, 34, 166, 1)", }}
+              variant="h6"
+            >
+              Full Stack MERN Developer
+            </Typography>
+            <CustomTitle variant="h1">
+              I enjoy <span style={{ color: "#97FFF4" }}>building</span> and <span style={{ color: "#97FFF4" }}>designing</span> for the web.
 
-      <img src={gradientBKG} className="gradientBKG background" />
-      <img src={Glitter} className="glitter background" />
-      <img src={ThirdRow} className="ThirdRow background" />
-      <img src={SecondRow} className="SecondRow background" />
-      <img src={FirstRow} className="FirstRow foreground" />
+            </CustomTitle>
+          </Box>
 
-      <Box className="foreground"
-        sx={{
-          mt: 8,
-          mb: 12,
-          p: 2,
-          maxWidth: "1200px",
-          mx: "auto"
-        }} >
-        <Typography
-          sx={{ color: "#260d54", textAlign: "center", mb: 2 }}
-          variant="h6"
-        >
-          Full Stack MERN Developer
-        </Typography>
-        <CustomTitle variant="h1">
-          I enjoy <span style={{ color: "#97FFF4" }}>building</span> and <span style={{ color: "#97FFF4" }}>designing</span> for the web.
-
-        </CustomTitle>
-      </Box>
-
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: "1rem",
-        }}
-      >
-        <Box
-          component="img"
-          sx={{
-            height: 150,
-            width: 150,
-            mt: 4,
-            mb: 4,
-          }}
-          src={reactImg}
-        />
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            flexWrap: "wrap",
-            width: "100%",
-            height: "100%",
-            gap: "1rem",
-          }}
-        >
-
-          <Link
-            to="contact"
-            smooth={true}
-            duration={500}
+          <Box id="callToActionButtons"
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "1rem",
+            }}
           >
-            <CustomButton style={{ minWidth: "120px" }}><span>Contact Me</span></CustomButton>
-          </Link>
+            <Box
+              component="img"
+              sx={{
+                height: 150,
+                width: 150,
+                mt: 1,
+                mb: 4,
+              }}
+              src={reactImg}
+            />
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                flexWrap: "wrap",
+                width: "100%",
+                height: "100%",
+                gap: "1rem",
+              }}
+            >
+
+              <Link
+                to="contact"
+                smooth={true}
+                duration={500}
+              >
+                <CustomButton style={{ minWidth: "120px" }}><span>Contact Me</span></CustomButton>
+              </Link>
 
 
-          <CustomButton style={{ minWidth: "120px" }} >
-            <a href={resumeDownload} download style={{ textDecoration: "none", color: "white", display: "flex", alignItems: "center" }}>
-              <CloudDownloadTwoToneIcon style={{ color: '#FFF', }} /> <span style={{ marginLeft: "0.5rem" }}> Resume</span>
-            </a>
-          </CustomButton>
+              <CustomButton style={{ minWidth: "120px" }} >
+                <a href={resumeDownload} download style={{ textDecoration: "none", color: "white", display: "flex", alignItems: "center" }}>
+                  <CloudDownloadTwoToneIcon style={{ color: '#FFF', }} /> <span style={{ marginLeft: "0.5rem" }}> Resume</span>
+                </a>
+              </CustomButton>
 
-        </Box>
+            </Box>
 
 
-      </Box>
+          </Box>
+        </ParallaxLayer>
+    
+      </Parallax>
+
+
+
     </Box>
 
 

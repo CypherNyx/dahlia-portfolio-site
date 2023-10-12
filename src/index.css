@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  scroll-behavior: smooth;
   /* background-color: rgba(0, 10, 31, 255);*/
 /*
   background: hsla(232, 73%, 65%, 1);
@@ -17,6 +19,7 @@ body {
 
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#6576e7", endColorstr="#A55CD1", GradientType=1);
 */
+
 background: hsla(232, 73%, 65%, 1);
 
 background: linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(261, 72%, 65%, 1) 19%, hsla(265, 85%, 34%, 1) 100%);
@@ -27,8 +30,68 @@ background: -webkit-linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(261, 
 
 filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6576E7", endColorstr="#9265E6", GradientType=1 );
 
+
 }
 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.link {
+  cursor: pointer;
+}
+
+
+
+/***** SPRING REACT ANIMATION *****/
+.hero {
+  z-index: -1;
+}
+.animation, .animation_layer{
+  min-height: 100vh;
+}
+
+.animation {
+  display: block;
+  position: relative;
+  z-index: 10;
+}
+
+.animation_layer {
+  background-position: bottom center;
+  background-size: repeat-x;
+  width: 100%;
+  position: absolute;
+}
+
+.animation_layer.parallax {
+  position: fixed;
+}
+
+.parallax::-webkit-scrollbar {
+  display: none;
+}
+
+#imgBackgroundBase{
+  background-image: url(./media/01_parallax_bkg_base.png);
+}
+#imgBackgroundGlitter{
+  background-image: url(./media/02_parallax_bkg_glitter.png);
+}
+#imgThirdRow{
+  background-image: url(./media/03_parallax_3rd_row.png);
+}
+#imgSecondRow{
+  background-image: url(./media/04_parallax_2nd_row.png);
+}
+#imgFirstRow{
+  background-image: url(./media/05_parallax_1st_row.png);
+}
+
+
+
+/* *** This was an attempt at doing the hero parallax with pure CSS
 .wrapper {
   height: 100vh;
   overflow-y: auto;
@@ -42,23 +105,15 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6576E7", en
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 100%; */
+  height: 100%;
   transform-style: preserve-3d;
   z-index: -1;
 }
 
 .gradientBKG, .glitter, .ThirdRow, .SecondRow, .FirstRow{
   position: absolute;
-  /* height: 100%; */
-  /* width: 100%; */
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-.link {
-  cursor: pointer;
-}
+*/
