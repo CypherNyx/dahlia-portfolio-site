@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import resumeDownload from '../media/dahlia_guido_resume_download.pdf'
 import CloudDownloadTwoToneIcon from '@mui/icons-material/CloudDownloadTwoTone';
 import Lottie from "lottie-react";
-import animationData from "../media/dev_cycle.json"
+import gears from "../media/tech.json"
 
 
 
@@ -48,7 +48,7 @@ const Home = () => {
     <Box id="home" className="banner" sx={{ position: 'relative', zIndex: 10 }} >
       <Box id="foreground"
         sx={{
-          mt: 18,
+          mt: 15,
           mb: 4,
           p: 2,
           maxWidth: "1200px",
@@ -75,10 +75,16 @@ const Home = () => {
           gap: "1rem",
         }}
       >
-        <Lottie
+        {/* <Lottie
           animationData={animationData}
           style={{ width: "25rem", height: "auto" }}
           speed={0.15}
+        /> */}
+        <Lottie
+          animationData={gears}
+          style={{ width: "18rem", height: "auto" }}
+          speed={0.5}
+          loop= "false"
         />
         <Box
           sx={{
