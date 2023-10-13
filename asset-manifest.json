@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dahlia-portfolio-site/static/css/main.20f40f32.css",
-    "main.js": "/dahlia-portfolio-site/static/js/main.ab66a56e.js",
+    "main.js": "/dahlia-portfolio-site/static/js/main.c5c1e2d2.js",
     "static/media/dahlia_guido_resume_download.pdf": "/dahlia-portfolio-site/static/media/dahlia_guido_resume_download.35f4ac7822d8de939bb8.pdf",
     "static/media/BookHub.png": "/dahlia-portfolio-site/static/media/BookHub.c436140e67cabc8e2095.png",
     "static/media/theVillage.png": "/dahlia-portfolio-site/static/media/theVillage.f38f02ae3a1f6594c211.png",
@@ -16,10 +16,10 @@
     "static/media/react_svg.svg": "/dahlia-portfolio-site/static/media/react_svg.282704d42209313dedab1847baf13cf8.svg",
     "index.html": "/dahlia-portfolio-site/index.html",
     "main.20f40f32.css.map": "/dahlia-portfolio-site/static/css/main.20f40f32.css.map",
-    "main.ab66a56e.js.map": "/dahlia-portfolio-site/static/js/main.ab66a56e.js.map"
+    "main.c5c1e2d2.js.map": "/dahlia-portfolio-site/static/js/main.c5c1e2d2.js.map"
   },
   "entrypoints": [
     "static/css/main.20f40f32.css",
-    "static/js/main.ab66a56e.js"
+    "static/js/main.c5c1e2d2.js"
   ]
 }
