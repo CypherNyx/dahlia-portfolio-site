@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Box, Button, styled, Typography } from "@mui/material";
 import { Link } from "react-scroll";
 import resumeDownload from '../media/dahlia_guido_resume_download.pdf'
 import CloudDownloadTwoToneIcon from '@mui/icons-material/CloudDownloadTwoTone';
-import Lottie from "lottie-react";
-import gears from "../media/tech.json"
+import Lottie, { LottieRefCurrentProps } from "lottie-react";
+import techie from "../media/tech.json"
 
 
 
@@ -42,6 +42,7 @@ const Home = () => {
     }
   }));
 
+  const techieRef = useRef < LottieRefCurrentProps > (null);
 
 
   return (
@@ -75,16 +76,16 @@ const Home = () => {
           gap: "1rem",
         }}
       >
-        {/* <Lottie
-          animationData={animationData}
-          style={{ width: "25rem", height: "auto" }}
-          speed={0.15}
-        /> */}
+
         <Lottie
-          animationData={gears}
+          onComplete={() => {
+            techieRef.current?.goToAndPlay(37, true)
+          }}
+          animationData={techie}
           style={{ width: "18rem", height: "auto" }}
-          speed={0.5}
-          loop= "false"
+          loop="false"
+          lottieRef={techieRef}
+
         />
         <Box
           sx={{
