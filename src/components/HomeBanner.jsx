@@ -4,8 +4,6 @@ import { Link } from "react-scroll";
 import reactImg from "../media/react_svg.svg";
 import resumeDownload from '../media/dahlia_guido_resume_download.pdf'
 import CloudDownloadTwoToneIcon from '@mui/icons-material/CloudDownloadTwoTone';
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-
 
 
 
@@ -45,78 +43,78 @@ const Home = () => {
 
 
   return (
-    <Box id="home" className="banner" style={{ position: 'relative', zIndex: 10}} >
-                <Box id="foreground"
-            sx={{
-              mt: 18,
-              mb: 8,
-              p: 2,
-              maxWidth: "1200px",
-              mx: "auto"
-            }} >
-            <Typography
-              sx={{ color: "#FFEB3B", textAlign: "center", mb: 2, textShadow: "5px 1px 6px rgba(75, 34, 166, 1)", }}
-              variant="h6"
-            >
-              Full Stack MERN Developer
-            </Typography>
-            <CustomTitle variant="h1">
-              I enjoy <span style={{ color: "#97FFF4" }}>building</span> and <span style={{ color: "#97FFF4" }}>designing</span> for the web.
+    <Box id="home" className="banner" style={{ position: 'relative', zIndex: 10 }} >
+      <Box id="foreground"
+        sx={{
+          mt: 18,
+          mb: 8,
+          p: 2,
+          maxWidth: "1200px",
+          mx: "auto"
+        }} >
+        <Typography
+          sx={{ color: "#FFEB3B", textAlign: "center", mb: 2, textShadow: "5px 1px 6px rgba(75, 34, 166, 1)", }}
+          variant="h6"
+        >
+          Full Stack MERN Developer
+        </Typography>
+        <CustomTitle variant="h1">
+          I enjoy <span style={{ color: "#97FFF4" }}>building</span> and <span style={{ color: "#97FFF4" }}>designing</span> for the web.
 
-            </CustomTitle>
-          </Box>
+        </CustomTitle>
+      </Box>
 
-          <Box id="callToActionButtons"
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              gap: "1rem",
-            }}
+      <Box id="callToActionButtons"
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "1rem",
+        }}
+      >
+        <Box
+          component="img"
+          sx={{
+            height: 150,
+            width: 150,
+            mt: 1,
+            mb: 4,
+          }}
+          src={reactImg}
+        />
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            flexWrap: "wrap",
+            width: "100%",
+            height: "100%",
+            gap: "1rem",
+          }}
+        >
+
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
           >
-            <Box
-              component="img"
-              sx={{
-                height: 150,
-                width: 150,
-                mt: 1,
-                mb: 4,
-              }}
-              src={reactImg}
-            />
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                flexWrap: "wrap",
-                width: "100%",
-                height: "100%",
-                gap: "1rem",
-              }}
-            >
-
-              <Link
-                to="contact"
-                smooth={true}
-                duration={500}
-              >
-                <CustomButton style={{ minWidth: "120px" }}><span>Contact Me</span></CustomButton>
-              </Link>
+            <CustomButton style={{ minWidth: "120px" }}><span>Contact Me</span></CustomButton>
+          </Link>
 
 
-              <CustomButton style={{ minWidth: "120px" }} >
-                <a href={resumeDownload} download style={{ textDecoration: "none", color: "white", display: "flex", alignItems: "center" }}>
-                  <CloudDownloadTwoToneIcon style={{ color: '#FFF', }} /> <span style={{ marginLeft: "0.5rem" }}> Resume</span>
-                </a>
-              </CustomButton>
+          <CustomButton style={{ minWidth: "120px" }} >
+            <a href={resumeDownload} download style={{ textDecoration: "none", color: "white", display: "flex", alignItems: "center" }}>
+              <CloudDownloadTwoToneIcon style={{ color: '#FFF', }} /> <span style={{ marginLeft: "0.5rem" }}> Resume</span>
+            </a>
+          </CustomButton>
 
-            </Box>
+        </Box>
 
 
-          </Box>
-       
+      </Box>
+
     </Box>
 
 

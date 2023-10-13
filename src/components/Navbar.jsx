@@ -44,76 +44,76 @@ const Navbar = () => {
       flexDirection: "column",
     },
   }));
-  return <Box sx={{flexGrow: 1, px:5, py: 2, maxWidth: "1200px", mx: "auto"}}>
-    <AppBar 
-      position = "fixed" 
-      style= {{background: "rgba(74, 13, 158, 0.7)", boxShadow: "none", padding: "1rem 2rem"}}>
+  return <Box sx={{ flexGrow: 1, px: 5, py: 2, maxWidth: "1200px", mx: "auto" }}>
+    <AppBar
+      position="fixed"
+      style={{ background: "rgba(74, 13, 158, 0.7)", boxShadow: "none", padding: "1rem 2rem" }}>
       <CustomToolbar>
-        <Box sx={{display: "flex", justifyContent: "center", alignItems: "center", gap: "1rem"}}>
-        <Link 
-        to="home" 
-        className="link" 
-        smooth 
-        offset={-200}>
-          <Typography variant="h2"
-          component="div" 
-          sx={{ 
-            flexGrow: 1, 
-            fontSize: "1.2rem",
-            fontWeight: "bold",
-            textTransform: "uppercase", 
-            letterSpacing: "5px", 
-            textShadow: "0 0 10px rgba(0,0,0,.5)",
-            fontFamily: "Monaco, sans-serif"
-            }}>
-            Dahlia Guido
-          </Typography> 
-          <Typography
-            component="div" 
-            sx={{ 
-              flexGrow: 1, 
-              fontSize: "10px",
-              fontWeight: "bold",
-              textTransform: "uppercase", 
-              letterSpacing: "4px", 
-              textShadow: "0 0 10px rgba(0,0,0,.5)",
-              marginLeft: "12%",
-              fontFamily: "Monaco, sans-serif"
-            }}>
-              Web Developer</Typography> 
-          </Link>        
+        <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "1rem" }}>
+          <Link
+            to="home"
+            className="link"
+            smooth
+            offset={-200}>
+            <Typography variant="h2"
+              component="div"
+              sx={{
+                flexGrow: 1,
+                fontSize: "1.2rem",
+                fontWeight: "bold",
+                textTransform: "uppercase",
+                letterSpacing: "5px",
+                textShadow: "0 0 10px rgba(0,0,0,.5)",
+                fontFamily: "Monaco, sans-serif"
+              }}>
+              Dahlia Guido
+            </Typography>
+            <Typography
+              component="div"
+              sx={{
+                flexGrow: 1,
+                fontSize: "10px",
+                fontWeight: "bold",
+                textTransform: "uppercase",
+                letterSpacing: "4px",
+                textShadow: "0 0 10px rgba(0,0,0,.5)",
+                marginLeft: "12%",
+                fontFamily: "Monaco, sans-serif"
+              }}>
+              Web Developer</Typography>
+          </Link>
         </Box>
 
-       
-         <CustomBox> 
-          <Link 
-             to="my-projects" 
-             className="link" 
-             smooth
-             offset={-100}
+
+        <CustomBox>
+          <Link
+            to="my-projects"
+            className="link"
+            smooth
+            offset={-100}
           >
             Projects
           </Link>
 
-          <Link 
-            to="about" 
-            className="link" 
+          <Link
+            to="about"
+            className="link"
             smooth
             offset={-100}>
             About
           </Link>
 
-          <Link 
-          to="contact" 
-          className="link" 
-          smooth 
-          offset={-100}>
+          <Link
+            to="contact"
+            className="link"
+            smooth
+            offset={-100}>
             Contact
           </Link>
 
-          <a href={resumeView} className="link" target = "_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "white", display: "flex", alignItems: "center" }}>
-          <OpenInNewIcon style={{ color: '#FFF', }} /> <span  style={{ marginLeft: "0.5rem" }}> Resume</span> 
-          </a> 
+          <a href={resumeView} className="link" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "white", display: "flex", alignItems: "center" }}>
+            <OpenInNewIcon style={{ color: '#FFF', }} /> <span style={{ marginLeft: "0.5rem" }}> Resume</span>
+          </a>
         </CustomBox>
       </CustomToolbar>
     </AppBar>

@@ -5,19 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  /* background-color: rgba(0, 10, 31, 255);*/
-/*
-  background: hsla(232, 73%, 65%, 1);
-
-  background: linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(277, 56%, 59%, 1) 47%, hsla(261, 72%, 65%, 1) 100%);
-
-  background: -moz-linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(277, 56%, 59%, 1) 47%, hsla(261, 72%, 65%, 1) 100%);
-
-  background: -webkit-linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(277, 56%, 59%, 1) 47%, hsla(261, 72%, 65%, 1) 100%);
-
-  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#6576e7", endColorstr="#A55CD1", GradientType=1);
-*/
+  scroll-behavior: smooth;
 
 background: hsla(232, 73%, 65%, 1);
 
@@ -89,29 +77,3 @@ code {
 
 
 
-/* *** This was an attempt at doing the hero parallax with pure CSS
-.wrapper {
-  height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  perspective: 10px;
-
-}
-
-.hero {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  transform-style: preserve-3d;
-  z-index: -1;
-}
-
-.gradientBKG, .glitter, .ThirdRow, .SecondRow, .FirstRow{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-*/
