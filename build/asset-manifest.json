@@ -1,21 +1,25 @@
 {
   "files": {
-    "main.css": "/dahlia-portfolio-site/static/css/main.32980c11.css",
-    "main.js": "/dahlia-portfolio-site/static/js/main.61f62891.js",
+    "main.css": "/dahlia-portfolio-site/static/css/main.20f40f32.css",
+    "main.js": "/dahlia-portfolio-site/static/js/main.ab66a56e.js",
     "static/media/dahlia_guido_resume_download.pdf": "/dahlia-portfolio-site/static/media/dahlia_guido_resume_download.35f4ac7822d8de939bb8.pdf",
     "static/media/BookHub.png": "/dahlia-portfolio-site/static/media/BookHub.c436140e67cabc8e2095.png",
     "static/media/theVillage.png": "/dahlia-portfolio-site/static/media/theVillage.f38f02ae3a1f6594c211.png",
+    "static/media/03_parallax_3rd_row.png": "/dahlia-portfolio-site/static/media/03_parallax_3rd_row.d704582c7f1cf59db0c9.png",
     "static/media/dahlia_guido_resume_view.pdf": "/dahlia-portfolio-site/static/media/dahlia_guido_resume_view.1d0c23c315d256700953.pdf",
     "static/media/pawfect_match.png": "/dahlia-portfolio-site/static/media/pawfect_match.a3f61a4facec205a3794.png",
+    "static/media/04_parallax_2nd_row.png": "/dahlia-portfolio-site/static/media/04_parallax_2nd_row.49032415b8193a0d5316.png",
+    "static/media/05_parallax_1st_row.png": "/dahlia-portfolio-site/static/media/05_parallax_1st_row.40480b16b708c4c1ef6e.png",
+    "static/media/02_parallax_bkg_glitter.png": "/dahlia-portfolio-site/static/media/02_parallax_bkg_glitter.5d55dfbb4ec0bad6478d.png",
     "static/media/react_logo.png": "/dahlia-portfolio-site/static/media/react_logo.1ae03b3cb9698006dc19.png",
     "static/media/dahliaAvatar.png": "/dahlia-portfolio-site/static/media/dahliaAvatar.6cfee709f8e111f77e3d.png",
     "static/media/react_svg.svg": "/dahlia-portfolio-site/static/media/react_svg.282704d42209313dedab1847baf13cf8.svg",
     "index.html": "/dahlia-portfolio-site/index.html",
-    "main.32980c11.css.map": "/dahlia-portfolio-site/static/css/main.32980c11.css.map",
-    "main.61f62891.js.map": "/dahlia-portfolio-site/static/js/main.61f62891.js.map"
+    "main.20f40f32.css.map": "/dahlia-portfolio-site/static/css/main.20f40f32.css.map",
+    "main.ab66a56e.js.map": "/dahlia-portfolio-site/static/js/main.ab66a56e.js.map"
   },
   "entrypoints": [
-    "static/css/main.32980c11.css",
-    "static/js/main.61f62891.js"
+    "static/css/main.20f40f32.css",
+    "static/js/main.ab66a56e.js"
   ]
 }
