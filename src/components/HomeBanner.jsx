@@ -1,9 +1,11 @@
 import React from "react";
 import { Box, Button, styled, Typography } from "@mui/material";
 import { Link } from "react-scroll";
-import reactImg from "../media/react_svg.svg";
 import resumeDownload from '../media/dahlia_guido_resume_download.pdf'
 import CloudDownloadTwoToneIcon from '@mui/icons-material/CloudDownloadTwoTone';
+import Lottie from "lottie-react";
+import animationData from "../media/dev_cycle.json"
+
 
 
 
@@ -43,11 +45,11 @@ const Home = () => {
 
 
   return (
-    <Box id="home" className="banner" style={{ position: 'relative', zIndex: 10 }} >
+    <Box id="home" className="banner" sx={{ position: 'relative', zIndex: 10 }} >
       <Box id="foreground"
         sx={{
           mt: 18,
-          mb: 8,
+          mb: 4,
           p: 2,
           maxWidth: "1200px",
           mx: "auto"
@@ -58,7 +60,7 @@ const Home = () => {
         >
           Full Stack MERN Developer
         </Typography>
-        <CustomTitle variant="h1">
+        <CustomTitle variant="h1" sx={{ textShadow: "7px 3px 4px rgba(51, 10, 106, 1)" }}>
           I enjoy <span style={{ color: "#97FFF4" }}>building</span> and <span style={{ color: "#97FFF4" }}>designing</span> for the web.
 
         </CustomTitle>
@@ -73,15 +75,10 @@ const Home = () => {
           gap: "1rem",
         }}
       >
-        <Box
-          component="img"
-          sx={{
-            height: 150,
-            width: 150,
-            mt: 1,
-            mb: 4,
-          }}
-          src={reactImg}
+        <Lottie
+          animationData={animationData}
+          style={{ width: "25rem", height: "auto" }}
+          speed={0.15}
         />
         <Box
           sx={{
