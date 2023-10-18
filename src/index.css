@@ -29,6 +29,10 @@ code {
   cursor: pointer;
 }
 
+#my-projects > div.MuiBox-root.css-1dlcyqs > div{
+  background-color: #e4ebfd;
+  filter: drop-shadow(2px 4px 6px black);
+}
 
 
 
