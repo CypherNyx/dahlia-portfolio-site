@@ -1,6 +1,6 @@
-import theVillageImg from "../media/theVillage.png";
-import pawfectImg from "../media/pawfect_match.png";
-import restcountriesImg from "../media/BookHub.png";
+import theVillageImg from "../media/thumb_pr3_village.jpg";
+import pawfectImg from "../media/thumb_pr2_pawfect.jpg";
+import restcountriesImg from "../media/thumb_pr1_bookhub.jpg";
 
 
 
@@ -10,7 +10,7 @@ export const projects = [
     description:
       "Mobile-first application that allows users to share childcare-related resources. Users can set up their own village or join an existing village and submit childcare-related requests and trade 'crayons' (points) with other villagers.",
     image: theVillageImg,
-    tags: [ "React", "JavaScript", "MongoDB", "MUI"],
+    tags: ["React", "JavaScript", "MongoDB", "MUI"],
     source: "https://github.com/Annie-McElroy/the-village",
     liveVersion: "https://the-village-pr3-499485f65b78.herokuapp.com/",
     id: 0,
