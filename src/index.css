@@ -7,15 +7,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
 
-background: hsla(232, 73%, 65%, 1);
+  background: hsla(232, 73%, 65%, 1);
 
-background: linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(261, 72%, 65%, 1) 19%, hsla(266, 83%, 23%, 1) 71%, hsla(266, 83%, 23%, 1) 100%);
+  background: linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(261, 72%, 65%, 1) 19%, hsla(266, 83%, 23%, 1) 71%, hsla(266, 83%, 23%, 1) 100%);
 
-background: -moz-linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(261, 72%, 65%, 1) 19%, hsla(266, 83%, 23%, 1) 71%, hsla(266, 83%, 23%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(261, 72%, 65%, 1) 19%, hsla(266, 83%, 23%, 1) 71%, hsla(266, 83%, 23%, 1) 100%);
 
-background: -webkit-linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(261, 72%, 65%, 1) 19%, hsla(266, 83%, 23%, 1) 71%, hsla(266, 83%, 23%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(261, 72%, 65%, 1) 19%, hsla(266, 83%, 23%, 1) 71%, hsla(266, 83%, 23%, 1) 100%);
 
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6576e7", endColorstr="#9265e6", GradientType=1 );
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#6576e7", endColorstr="#9265e6", GradientType=1);
 
 
 }
@@ -34,46 +34,36 @@ code {
 
 /***** SPRING REACT ANIMATION *****/
 
-.animation, .animation_layer{
-  min-height: 100vh;
-}
-
-.animation {
-  display: block;
-  position: relative;
-  z-index: 10;
-}
-
 .animation_layer {
+  min-height: 100vh;
   background-position: bottom center;
   background-size: repeat-x;
   width: 100%;
   position: absolute;
 }
 
-.animation_layer.parallax {
-  position: fixed;
-}
+
 
 .parallax::-webkit-scrollbar {
   display: none;
 }
 
-#imgBackgroundBase{
-  background-image: url(./media/01_parallax_bkg_base.png);
-}
-#imgBackgroundGlitter{
-  background-image: url(./media/02_parallax_bkg_glitter.png);
-}
-#imgThirdRow{
-  background-image: url(./media/03_parallax_3rd_row.png);
-}
-#imgSecondRow{
-  background-image: url(./media/04_parallax_2nd_row.png);
-}
-#imgFirstRow{
-  background-image: url(./media/05_parallax_1st_row.png);
+#imgBackgroundBase {
+  background-image: url('./media/01_parallax_bkg_base.png');
 }
 
+#imgBackgroundGlitter {
+  background-image: url('./media/02_parallax_bkg_glitter.png');
+}
 
+#imgThirdRow {
+  background-image: url('./media/03_parallax_3rd_row.png');
+}
 
+#imgSecondRow {
+  background-image: url('./media/04_parallax_2nd_row.png');
+}
+
+#imgFirstRow {
+  background-image: url('./media/05_parallax_1st_row.png');
+}
