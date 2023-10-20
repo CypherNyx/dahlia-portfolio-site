@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
-
+/* gradient body bkg */
   background: hsla(232, 73%, 65%, 1);
 
   background: linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(261, 72%, 65%, 1) 19%, hsla(266, 83%, 23%, 1) 71%, hsla(266, 83%, 23%, 1) 100%);
@@ -29,11 +29,13 @@ code {
   cursor: pointer;
 }
 
+/* Add shadows to project thumbnails */
 #my-projects > div.MuiBox-root.css-1dlcyqs > div{
   background-color: #e4ebfd;
   filter: drop-shadow(2px 4px 6px black);
 }
 
+/*** Home Hero Tagline ***/
 #foreground > h1 {
   font-family: "Roboto","Helvetica","Arial",sans-serif;
   font-weight: 600;
@@ -54,6 +56,19 @@ code {
   }
 }
 
+/* change the color for contact form outline */
+
+.MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: #97FFF4;
+  color: #97FFF4;
+}
+
+#about > form > div > label{
+  color: #97FFF4;
+}
+
+
+/* contact form button styling */
 
 
 /***** SPRING REACT ANIMATION *****/

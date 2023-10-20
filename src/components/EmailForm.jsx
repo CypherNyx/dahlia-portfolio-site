@@ -1,10 +1,29 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { Box, Button, Typography, FormControl, OutlinedInput , InputLabel   } from "@mui/material";
+import { Box, Button, styled, Typography, FormControl, OutlinedInput , InputLabel   } from "@mui/material";
 
 
 
 const EmailForm = () => {
+
+  const CustomButton = styled(Button)(({ theme }) => ({
+    border: "3px solid transparent",
+    backgroundColor: "#260d54",
+    color: "white",
+    width: "200px",
+    height: "50px",
+    borderRadius: "25px",
+    "&:hover": {
+      border: "3px solid white",
+      backgroundColor: "transparent",
+    },
+    [theme.breakpoints.down("md")]: {
+      width: "35%",
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: "50%",
+    },
+  }));
   
   const form = useRef();
   console.log(process.env.REACT_APP_PUBLIC_KEY);
@@ -64,9 +83,9 @@ const EmailForm = () => {
   {sent ? (
     <Typography variant="body1">Email sent successfully!</Typography> 
   ) : (
-    <Button type="submit" variant="contained">
+    <CustomButton type="submit" variant="contained">
     Send
-  </Button>
+  </CustomButton>
   )}
 
   
