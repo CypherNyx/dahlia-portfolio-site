@@ -62,7 +62,7 @@ const Home = () => {
           Full Stack MERN Developer
         </Typography>
         <CustomTitle variant="h1" sx={{ textShadow: "7px 3px 4px rgba(51, 10, 106, 1)" }}>
-               creating <span style={{ color: "#97FFF4" }}>intuitive</span> web solutions through <span style={{ color: "#97FFF4" }}>code. </span>
+               creating <span style={{ color: "#97FFF4" }}>intuitive</span> web <br />solutions through <span style={{ color: "#97FFF4" }}>code. </span>
         </CustomTitle>
       </Box>
 
