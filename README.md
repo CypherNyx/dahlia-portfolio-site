@@ -90,6 +90,16 @@ Here is a full list of the dependencies for this application
 - @testing-library/jest-dom - Custom Jest matchers
 - web-vitals - Core web vitals metrics
 
+### Attributions and Resources
+
+The list below contains links to resources that were helpful or used in this project.
+
+- Gradient Maker tool: [Coolors](https://coolors.co/gradient-maker/6576e7-a55cd1-9163e6?position=0,47,100&opacity=100,100,100&type=linear&rotation=90)
+- Background Landscape by [pikisuperstar @ FreePik](https://www.freepik.com/free-vector/landing-page-with-purple-gradient-landscape_5267485.htm#query=landscape&position=33&from_view=search&track=sph)
+- LottieFile computer animation by [Nadeem Javed](https://lottiefiles.com/animations/web-development-design-4NbPwKIFLV)
+
+
+
 ## Contributing
 Pull requests are welcome. Please open an issue first to discuss any proposed changes or additions.
 <br>
